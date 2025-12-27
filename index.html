@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JimJob - Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">💼 JimJob <span class="badge">CASE STUDY</span></div>
+        <div class="nav-links">
+            <a href="#features">Funcționalități</a>
+            <a href="#tech">Tehnologii</a>
+            <a href="#gallery">Galerie</a>
+        </div>
+        <a href="#" class="github-btn">GitHub Repo</a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-label">WEB APPLICATION</div>
+            <h1>Platformă de Recrutare <span class="gradient-text">Video-First</span></h1>
+            <p class="hero-desc">JimJob redefinește procesul de angajare prin eliminarea CV-urilor plictisitoare.
+                Platforma permite candidaților să aplice prin video.</p>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num">PHP 8+</span><span class="stat-label">Backend</span></div>
+                <div class="stat"><span class="stat-num">MySQL</span><span class="stat-label">Database</span></div>
+                <div class="stat"><span class="stat-num">Pure JS</span><span class="stat-label">Frontend</span></div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="mockup-window">
+                <div class="mockup-header">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                </div>
+                <div class="mockup-content">
+                    <div class="placeholder-ui"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title">Ce face proiectul special?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box blue"><i data-lucide="video"></i></div>
+                    <h3>Player Video Custom</h3>
+                    <p>Sistem complet de înregistrare și redare video implementat nativ în browser.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box green"><i data-lucide="layout-dashboard"></i></div>
+                    <h3>CMS PRO Avansat</h3>
+                    <p>Panou de administrare pentru angajatori cu statistici live.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box purple"><i data-lucide="database"></i></div>
+                    <h3>Arhitectură Robustă</h3>
+                    <p>Backend PHP optimizat cu MySQLi și protecție SQL injection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title light">Stack Tehnologic</h2>
+            <ul class="tech-list">
+                <li><i data-lucide="check-circle"></i> <strong>Vanilla JavaScript</strong> <span>Fără framework-uri
+                        grele.</span></li>
+                <li><i data-lucide="check-circle"></i> <strong>PHP & MySQL</strong><span>Backend rapid și stabil.</span>
+                </li>
+                <li><i data-lucide="check-circle"></i> <strong>CSS3 Modern</strong><span>Variabile, Flexbox și
+                        Grid.</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <h3>JimJob</h3>
+                <p>O demonstrație de abilități Full Stack Web Development.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2025 JimJob. Toate drepturile rezervate.</div>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

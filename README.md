@@ -1,38 +1,69 @@
+# 🎥 JimJob - Platformă de Recrutare Video
 
-# 💼 JimJob - Platformă de Recrutare Video-First
+JimJob este o platformă inovatoare de recrutare care schimbă modul în care angajatorii interacționează cu candidații, punând accent pe **aplicațiile video**. Proiectul oferă un ecosistem complet pentru publicarea anunțurilor, gestionarea candidaturilor și statistici detaliate.
 
-JimJob este o aplicație web inovatoare dedicată modernizării procesului de recrutare. Prin eliminarea CV-urilor tradiționale și concentrarea pe aplicații video, platforma oferă angajatorilor o perspectivă autentică asupra candidaților, iar acestora din urmă o modalitate dinamică de a se prezenta.
+![JimJob Banner](https://via.placeholder.com/1200x400.png?text=JimJob+Platforma+Video+Recrutare "JimJob Preview")
 
-Proiectul a fost dezvoltat de la zero ("from scratch") pentru a demonstra o înțelegere profundă a tehnologiilor web fundamentale, punând accent pe performanță, securitate și experiența utilizatorului (UX).
+## ✨ Funcționalități Principale
 
-## ✨ Funcționalități Cheie
+### 🏢 Pentru Angajatori (PRO)
+*   **Dashboard Avansat (CMS)**: Panou de administrare modern pentru gestionarea anunțurilor.
+*   **Aplicații Video**: Vizualizarea candidaților direct în platformă prin player-ul integrat.
+*   **Statistici Live**: Monitorizare în timp real pentru:
+    *   👁️ Vizualizări anunț
+    *   💾 Salvări
+    *   🎥 Număr de aplicanți
+*   **Management Anunțuri**: Adăugare, editare, ștergere și vizualizare anunțuri.
+*   **Contact Rapid**: Butoane directe pentru apel telefonic și WhatsApp către candidați.
 
-### 🎥 Pentru Candidați (Video Application System)
-*   **Înregistrare Video Nativă**: Sistem custom de captură video direct în browser, fără plugin-uri externe. Permite înregistrarea, vizualizarea și reînregistrarea aplicației.
-*   **Interfață Mobile-First**: Optimizată pentru aplicarea rapidă de pe telefonul mobil.
-*   **Profil Simplificat**: Gestionarea ușoară a datelor personale și a istoricului de aplicări.
+### 👨‍💼 Pentru Candidați
+*   **Aplicare prin Video**: Posibilitatea de a se prezenta printr-un scurt video în loc de CV-ul tradițional.
+*   **Player Video Dedicat**: Interfață modernă de încărcare și vizualizare a video-ului înainte de trimitere.
+*   **Profil Utilizator**: Gestionarea datelor personale și a istoricului.
 
-### 🏢 Pentru Angajatori (PRO Dashboard)
-*   **CMS Avansat**: Panou de control complex pentru gestionarea anunțurilor de angajare.
-*   **Statistici Live**: Monitorizare în timp real a performanței anunțurilor (👁️ vizualizări, 💾 salvări, 🎥 număr aplicanți).
-*   **Management Aplicații**: Vizualizarea candidaților într-un player dedicat, cu acțiuni rapide de contact (apel telefonic, WhatsApp, email) sau ștergere.
-*   **Filtrare și Editare**: Unelte complete pentru administrarea conținutului publicat.
+## 🛠️ Tehnologii Utilizate
 
-## 🛠️ Arhitectură și Tehnologii
+Proiectul este construit folosind tehnologii web standard, optimizate pentru performanță și compatibilitate maximă:
 
-Proiectul refuză utilizarea framework-urilor "grele" în favoarea unei arhitecturi curate și performante:
+*   **Frontend**:
+    *   HTML5 & CSS3 (Design personalizat, Glassmorphism, Responsive)
+    *   JavaScript (ES6+, Fetch API pentru operațiuni asincrone)
+    *   Lucide Icons (pentru iconițe vectoriale moderne)
+*   **Backend**:
+    *   PHP (Arhitectură nativă, sesiuni securizate)
+    *   MySQL (Bază de date relațională optimizată)
+*   **Securitate**:
+    *   Protecție împotriva CSRF și XSS
+    *   Sesiuni persistente
+    *   Validare date input
 
-*   **Frontend**: 
-    *   **Vanilla JavaScript (ES6+)**: Logică asincronă complexă gestionată prin Fetch API, fără dependențe precum React sau Vue.
-    *   **CSS3 Modern**: Design responsiv folosind CSS Grid, Flexbox și variabile CSS pentru tematică (Dark Mode / Light Mode).
-*   **Backend**: 
-    *   **PHP 8+**: Arhitectură MVC simplificată, securizată împotriva vulnerabilităților comune (SQL Injection, XSS).
-    *   **MySQL**: Bază de date relațională optimizată pentru interogări rapide și integritatea datelor.
-*   **Infrastructură**:
-    *   Gestionare eficientă a fișierelor media (video/foto).
-    *   Sistem de autentificare și sesiuni persistente.
+## 📁 Structură Proiect
 
-## 🎯 Scopul Proiectului
+```
+/
+├── index.php                  # Pagina principală
+├── user_pro/                  # Modulul pentru utilizatori PRO
+│   ├── cms_anunturi_pro.html  # Interfața CMS
+│   ├── player_app_pro.php     # Player-ul de aplicare
+│   ├── get_anunturi_pro.php   # API Backend
+│   └── ...
+├── promovare_anunturi/        # Modulul standard de anunțuri
+├── assets/                    # Resurse statice (imagini, css, js)
+└── github/                    # Documentație proiect
+```
 
-JimJob demonstrează capacitatea de a construi o aplicație "Full Stack" robustă, scalabilă și estetică, stăpânind întregul ciclu de viață al dezvoltării software - de la baza de date până la pixelul de pe ecran.
+## 🚀 Cum să începi
 
+1.  **Clonează repository-ul**
+    ```bash
+    git clone https://github.com/username/jimjob.git
+    ```
+2.  **Configurează baza de date**
+    *   Importă structura SQL din `database/schema.sql`.
+    *   Configurează conexiunea în `db.php`.
+3.  **Pornește serverul**
+    *   Rulează pe un server Apache/Nginx cu suport PHP.
+
+## 📝 Licență
+
+Acest proiect este proprietate privată JimJob. Toate drepturile rezervate.
